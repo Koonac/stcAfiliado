@@ -1,10 +1,11 @@
 <template>
   <div class="box-content h-2/4 w-10/12 font-semibold">
-    <h3 class="font-mono text-center text-4xl ">
+    <h3 class="font-mono text-center text-2xl md:text-4xl pb-3">
       Qual seu objetivo ?
     </h3>
-    <div class="h-full bg-red border-2 border-red-600 rounded-3xl p-3 shadow-md shadow-gray-800 grid grid-cols-3 gap-4">
+    <div class="h-full bg-red border-2 border-red-600 rounded-3xl p-3 shadow-md shadow-gray-800 grid sm:grid-cols-3 gap-4">
       <button
+      v-on:click="() => {responseQuestion('1')}"
         class="border-2 border-red-600 rounded-3xl transition duration-700 ease-in-out transform hover:bg-red-300 hover:-translate-y-2 hover:scale-110">
         Converter gorduras em kilos
       </button>
@@ -25,6 +26,6 @@
 export default {
   name: 'Question',
   props: {
-  }
+  },
 }
 </script>
