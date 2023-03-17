@@ -33,11 +33,12 @@
       conhece-los é só clicar no botão abaixo.
     </h3>
     <div class="w-auto flex justify-end p-2">
-      <a href="/StcDoAmor">
+      <router-link :to="{name: 'StcDoAmor'}">
         <button
-          class="animate-pulse-v2 border-2 border-black rounded-xl p-3 transition duration-200 ease-in-out transform hover:animate-none hover:border-white hover:text-white">Saiba
-          Mais</button>
-      </a>
+          class="animate-pulse-v2 border-2 border-black rounded-xl p-3 transition duration-200 ease-in-out transform hover:animate-none hover:border-white hover:text-white">
+          Saiba Mais
+        </button>
+      </router-link>
     </div>
   </div>
 </template>
@@ -69,4 +70,5 @@ export default {
 
 .animate-pulse-v2 {
   animation: pulse-v2 1.5s infinite;
-}</style>
+}
+</style>
