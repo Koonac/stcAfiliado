@@ -1,7 +1,7 @@
 <template>
-  <div class="flex h-screen w-screen justify-center items-center m-0 p-0 bg-gradient-to-r from-pink-200 to-red-100">
+  <div class="flex min-h-screen sm:h-screen w-screen justify-center items-center m-0 p-0">
     <transition name="slide-left" mode="out-in">
-      <router-view/>
+      <router-view />
     </transition>
   </div>
 </template>
@@ -12,11 +12,18 @@ export default {
 }
 </script>
 <style>
+#app {
+  background-image: url('./assets/bg-sport1.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
+
 .slide-left-enter-active {
   transition: all 0.3s ease-out;
 }
+
 .slide-left-leave-active {
-  transition: all 1s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .slide-left-enter-from,
