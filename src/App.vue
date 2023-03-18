@@ -12,8 +12,36 @@ export default {
 }
 </script>
 <style>
+:root {
+  --url-background-image: url('./assets/bg-sport1-1000.jpg');
+}
+
+@media (min-width: 640px) {
+  :root {
+    --url-background-image: url('./assets/bg-sport1-1000.jpg');
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --url-background-image: url('./assets/bg-sport1-2000.jpg');
+  }
+}
+
+@media (min-width: 1536px) {
+  :root {
+    --url-background-image: url('./assets/bg-sport1-3000.jpg');
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --url-background-image: url('./assets/bg-sport1-5000.jpg');
+  }
+}
+
 #app {
-  background-image: url('./assets/bg-sport1.jpg');
+  background-image: var(--url-background-image);
   background-position: bottom;
   background-size: cover;
 }
