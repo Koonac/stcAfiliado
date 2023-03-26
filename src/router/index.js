@@ -8,7 +8,7 @@ import Info from '../views/Info.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/Apresentacao',
     name: 'Apresentacao',
     component: Apresentacao
   },
@@ -33,7 +33,7 @@ const routes = [
     component: Info
   },
   {
-    path: '/StcDoAmor',
+    path: '/',
     name: 'StcDoAmor',
     component: StcDoAmorAfiliado
   }
